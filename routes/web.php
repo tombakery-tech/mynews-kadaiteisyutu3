@@ -29,6 +29,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
 });
 
 //課題１URLとControllerやActionを紐付ける機能を何といいますか？→Routing
+//落書き
 
 //課題２あなたが考える、group化をすることのメリットを考えてみてください。→
 //一つのグループ化で多くの Routingが出来ること
