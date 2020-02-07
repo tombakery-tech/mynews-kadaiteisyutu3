@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\admin;
+namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -59,7 +59,7 @@ class ProfileController extends Controller
     public function update(Request $request)
   {
       // Validationをかける
-      $this->validate($request, profile::$rules);
+      $this->validate($request, Profile::$rules);
       // profile Modelからデータを取得する
       $profile = Profile::find($request->id);
       // 送信されてきたフォームデータを格納する

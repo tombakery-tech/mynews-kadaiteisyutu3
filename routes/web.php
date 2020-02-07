@@ -31,6 +31,8 @@ Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
 
 });
 
+Route::get('/', 'NewsController@index');
+
 //課題１URLとControllerやActionを紐付ける機能を何といいますか？→Routing
 //落書き
 
