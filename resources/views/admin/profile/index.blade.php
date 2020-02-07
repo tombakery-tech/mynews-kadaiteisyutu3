@@ -42,8 +42,10 @@
                             @foreach($posts as $profile)
                                 <tr>
                                     <th>{{ $profile->id }}</th>
-                                    <td>{{ str_limit($profile->title, 100) }}</td>
-                                    <td>{{ str_limit($profile->body, 200) }}</td>
+                                    <td>{{ str_limit($profile->name, 100) }}</td>
+                                    <td>{{ str_limit($profile->gender, 200) }}</td>
+                                    <td>{{ str_limit($profile->hobby, 200) }}</td>
+                                    <td>{{ str_limit($profile->introduction, 200) }}</td>
                                 <td>
                                     <div>
                                         <a href="{{ action('Admin\ProfileController@edit', ['id' => $profile->id]) }}">編集</a>
