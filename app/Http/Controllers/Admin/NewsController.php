@@ -54,7 +54,9 @@ public function index(Request $request)
 public function edit(Request $request)
 {
     $news = News::find($request->id);
-    
+    if (empty($news)) {
+        abort(404);    
+      }
     return view('admin.news.edit', ['news_form' => $news]);
 }
 
