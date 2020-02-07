@@ -15,7 +15,7 @@
                     <div class="form-group row">
                         <label class="col-md-2">名前</label>
                         <div class="col-md-8">
-                            <input type="text" class="form-control" name="cond_title" value="{{ $cond_title }}">
+                            <input type="text" class="form-control" name="cond_name" value="{{ $cond_name }}">
                         </div>
                         <div class="col-md-2">
                             {{ csrf_field() }}
@@ -31,11 +31,12 @@
                     <table class="table table-dark">
                         <thead>
                             <tr>
+                                <th width="5%">ID</th>
                                 <th width="10%">名前</th>
                                 <th width="10%">性別</th>
-                                <th width="20%">趣味</th>
-                                <th width="30%">自己紹介欄</th>
-                                <th width="20%">操作</th>
+                                <th width="15%">趣味</th>
+                                <th width="40%">自己紹介欄</th>
+                                <th width="10%">操作</th>
                             </tr>
                         </thead>
                         <tbody>
