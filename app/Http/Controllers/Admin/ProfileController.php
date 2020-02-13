@@ -71,11 +71,11 @@ class ProfileController extends Controller
       
       // 以下を18で追記
         $history = new ProfileHistory;
-        $history->news_id = $profile->id;
+        $history->profile_id = $profile->id;
         $history->edited_at = Carbon::now();
         $history->save();
-
-      return redirect('admin/profile/edit');
+        $url = 'admin/profile/edit?id='.$profile->id;
+      return redirect($url);
   }
     public function delete(Request $request)
   {
