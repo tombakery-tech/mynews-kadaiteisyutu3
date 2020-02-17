@@ -16,7 +16,7 @@ class Profile extends Model
         
         // 以下を１８に追記
     // Profileモデルに関連付けを行う
-    public function histories()
+    public function profilehistories()
     {
       return $this->hasMany('App\ProfileHistory');
 
